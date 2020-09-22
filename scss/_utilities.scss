@@ -1,0 +1,106 @@
+@import "config";
+
+.container {
+  max-width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+
+  .logo-p {
+    padding-left: 11px;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: none;
+    background: linear-gradient(#00e0d0 0%, #4aa3cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $main-color;
+  }
+}
+
+.navbar {
+  padding-bottom: 15px;
+  background: rgba(36, 45, 65, 0.658);
+  transition: all 0.5s;
+}
+
+.bottom-line {
+  align-self: center;
+  width: 50px;
+  height: 1px;
+  background: $main-color;
+
+  &-grey {
+    height: 2px;
+    background: $line-grey;
+  }
+}
+
+// Slider Dots
+.dot {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 1px solid #c2c2c2;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &-active {
+    background: $main-color;
+    border: none;
+  }
+}
+
+// Buttons
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 11px 12px;
+  font-family: "HammersmithOne", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  color: $main-color;
+  border-radius: 2px;
+  border: 1px solid $main-color;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 1;
+
+  &:hover {
+    color: #fff;
+    background: $main-color;
+  }
+}
+
+.btn-footer {
+  margin-left: 10px;
+  width: 70px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: rgba(85, 85, 85, 0.7);
+  }
+}
+
+.footer-p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  line-height: 26px;
+}
